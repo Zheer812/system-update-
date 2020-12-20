@@ -52,7 +52,7 @@ client.on("message", async message => {
 > anti kick [Number]
 > anti channel [Number]
 > anti role [Number]
-> antibot [on / off]
+> anti bot [on / off]
 ━──╮•╭──━
 ⌖| Public
 > bot , server , ping , profile , uinvites , hightRole , nick
