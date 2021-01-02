@@ -685,6 +685,7 @@ client.on("message", message => {
       .addField("**Name Bot**", `[ ${client.user.tag} ]`, true)
       .addField("**ID Bot**", `[ ${client.user.id} ]`, true)
       .addField("**Prefix Bot**", `[ ${prefix} ]`, true)
+      .addField(":file_folder: Users", `${client.users.cache.size}`, true)
       .addField("**Bot Language**", `[ Java Script ]`, true)
       .setFooter("Security");
 
