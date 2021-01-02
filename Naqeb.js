@@ -20,12 +20,12 @@ const dateFormat = require("dateformat");
 var table = require("table").table;
 const Discord = require("discord.js");
 const cmd = require("node-cmd");
-const prefix = "$";
-client.login("NzMyMDQ1NzcyODc4NjQzMjUw.Xwu4wQ.XQlfka4DnTOTo59o3xyj-4SLyII");
+const prefix = "-";
+client.login("Nzc5NjUwMjgwOTc1MzY4MTky.X7jn6A.ryWD8MsNbKoSlekUeZskoORZZnA");
 client.on("ready", async () => {
   console.log(`Logged in as ${client.user.username}!`);
   client.user.setStatus("idle");
-  client.user.setActivity(`${prefix}help`, { type: "PLAYING" });
+  client.user.setActivity(`${prefix}help | ${client.users.cache.size} Users `, { type: "PLAYING" });
   client.guilds.cache.forEach(g => {
     if (g.member(client.user).hasPermission("ADMINISTRATOR")) {
       g.fetchInvites().then(guildInvites => {});
