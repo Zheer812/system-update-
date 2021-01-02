@@ -20,8 +20,8 @@ const dateFormat = require("dateformat");
 var table = require("table").table;
 const Discord = require("discord.js");
 const cmd = require("node-cmd");
-const prefix = "%";
-client.login("");
+const prefix = "$";
+client.login("NzMyMDQ1NzcyODc4NjQzMjUw.Xwu4wQ.XQlfka4DnTOTo59o3xyj-4SLyII");
 client.on("ready", async () => {
   console.log(`Logged in as ${client.user.username}!`);
   client.user.setStatus("idle");
@@ -46,13 +46,6 @@ client.on("message", async message => {
       
   
 
-━──╮•╭──━
-⌖| Security
-> anti ban [Number]
-> anti kick [Number]
-> anti channel [Number]
-> anti role [Number]
-> anti bot [on / off]
 ━──╮•╭──━
 ⌖| Public
 > bot , server , ping , profile , uinvites , hightRole , nick
