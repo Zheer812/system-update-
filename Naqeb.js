@@ -25,7 +25,7 @@ client.login("Nzc5NjUwMjgwOTc1MzY4MTky.X7jn6A.ryWD8MsNbKoSlekUeZskoORZZnA");
 client.on("ready", async () => {
   console.log(`Logged in as ${client.user.username}!`);
   client.user.setStatus("idle");
-  client.user.setActivity(`${prefix}help | ${client.users.cache.size} Users `, { type: "PLAYING" });
+  client.user.setActivity(`${prefix}help | ${client.users.caches.size} Users `, { type: "PLAYING" });
   client.guilds.cache.forEach(g => {
     if (g.member(client.user).hasPermission("ADMINISTRATOR")) {
       g.fetchInvites().then(guildInvites => {});
@@ -47,17 +47,16 @@ client.on("message", async message => {
   
 
 ━──╮•╭──━
-⌖| Public
+| Public
 > bot , server , ping , profile , uinvites , hightRole , nick
 > user , avatar , roles , emoji
 ━──╮•╭──━
-⌖| Moderation
+| Moderation
 > , ban , kick , mute , unmute , slowmode , bans
 > say , unban[userid/all]
 ━──╮•╭──━
-
-__ [Vote](link top gg) __  
-__ [invite](invitebot) __  __ [Support](https://discord.gg/cetGQvWD3h) __
+ 
+__ [invite](https://discord.com/api/oauth2/authorize?client_id=779650280975368192&permissions=8&scope=bot) __  __ [Support](https://discord.gg/cetGQvWD3h) __
 
 `);
     message.channel.send(help);
