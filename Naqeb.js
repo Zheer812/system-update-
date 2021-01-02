@@ -48,7 +48,7 @@ client.on("message", async message => {
 
 ━──╮•╭──━
 | Public
-> bot , server , ping , profile , uinvites , hightRole , nick
+> server , ping , profile , uinvites , hightRole , nick
 > user , avatar , roles , emoji
 ━──╮•╭──━
 | Moderation
@@ -657,35 +657,6 @@ client.on("guildMemberRemove", async member => {
 
 /////
 
-
-////////
-
-
-
-
-///////
-
-client.on("message", message => {
-  if (message.content.startsWith(`${prefix}bot`)) {
-    const tnx = new Discord.MessageEmbed()
-      .setAuthor(client.user.username, client.user.avatarURL())
-
-      .setColor("RANDOM")
-      .setTitle(`Info about ${client.user.username}.`)
-      .addField(
-        "**Ping Bot**",
-        `${Date.now() - message.createdTimestamp}` + "MS",
-        true
-      )
-      .addField( "**Ram Usage**",`${(process.memoryUsage().rss / 1048576).toFixed()}MB`,true)
-      .addField("**Name Bot**", `[ ${client.user.tag} ]`, true)
-      .addField("**ID Bot**", `[ ${client.user.id} ]`, true)
-      .addField("**Prefix Bot**", `[ ${prefix} ]`,    .addField("**Bot Language**", `[ Java Script ]`, true)
-      .setFooter("Security");
-
-    message.channel.send(tnx);
-  }
-});
 
 ////////
 
